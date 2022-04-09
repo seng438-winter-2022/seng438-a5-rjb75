@@ -76,27 +76,27 @@ As the most failure intervals was from DW3(F, C) and was at a total of 88 (59+29
 
 The following charts utilize the dataset provided in the lab. The excel sheet was used to generate this graph. Note that the excel sheet was modified to accommodate this lab's number of data points. 
 
-## $\text{MTTF}_{min}$
+## MTTFMin
 
 ![Untitled](Assignment%20f1db6/Untitled%205.png)
 
-The above graph shows the plot for $\text{MTTF}_{min}$ for the provided input data which we determined to be $100/230,000 = 0.000435$.
+The above graph shows the plot for MTTFmin for the provided input data which we determined to be 100/230,000 = 0.000435.
 
-## $\frac{1}{2} \times \text{MTTF}_{min}$
+## 1/2 x MTTFmin
 
 ![Untitled](Assignment%20f1db6/Untitled%206.png)
 
-The above graph shows the plot for $\frac{1}{2} \times \text{MTTF}_{min}$ for the provided input data which we took as  $50/230,000 = 0.000217$.
+The above graph shows the plot for 1/2 x MTTFmin for the provided input data which we took as 50/230,000 = 0.000217.
 
-## $2 \times \text{MTTF}_{min}$
+## 2 x MTTFmin
 
 ![Untitled](Assignment%20f1db6/Untitled%207.png)
 
-The above graph shows the plot for $2 \times \text{MTTF}_{min}$ for the provided input data which we took as  $200/230,000 = 0.000870$. By doubling the MTTF, we see an increased number of failures in the accept region of the graph.
+The above graph shows the plot for 2 x MTTFmin for the provided input data which we took as 200/230,000 = 0.000870. By doubling the MTTF, we see an increased number of failures in the accept region of the graph.
 
 **Evaluation and Justification of MTTFmin**
 
-Based on the original graph of $\text{MTTF}_{min}$, the selected value is when the FIO is 100 failures per 230,000 calls. This value was chosen through trial and error to have the graph ending in the acceptable range (1 point barely entering the good range). By dividing the acceptable number of failures by the per number of input events, we approach the `0.000435` mark for the $\text{MTTF}_{min}$. When decreasing the value of the call to 100,000, we notice that the plot graph has a substantial section in the acceptable range, resulting in an incorrect chart. Alternatively, having the value increased to 500,000, the plot graph falls in the reject region. We hover around the 220,000 - 240,000 range through trial and error to get the plots to end after the acceptable and continue-to-test boundary. 
+Based on the original graph of **MTTFmin** , the selected value is when the FIO is 100 failures per 230,000 calls. This value was chosen through trial and error to have the graph ending in the acceptable range (1 point barely entering the good range). By dividing the acceptable number of failures by the per number of input events, we approach the `0.000435` mark for the **MTTFmin**. When decreasing the value of the call to 100,000, we notice that the plot graph has a substantial section in the acceptable range, resulting in an incorrect chart. Alternatively, having the value increased to 500,000, the plot graph falls in the reject region. We hover around the 220,000 - 240,000 range through trial and error to get the plots to end after the acceptable and continue-to-test boundary. 
 
 Note that throughout this part of the lab, we maintained the original value of the Discrimination Ratio, Developer's Risk, and User's Risk parameters at 2.0, 0.1, and 0.1, respectively. 
 
@@ -107,19 +107,19 @@ Note that throughout this part of the lab, we maintained the original value of t
 
 **Disadvantages of RDC**
 
-- A Tedious process when experimenting with $\text{MTTF}_{min}$ to meet the criteria of the RDC. A lot of trial and error was used to create a graph that makes sense.
+- A Tedious process when experimenting with **MTTFmin** to meet the criteria of the RDC. A lot of trial and error was used to create a graph that makes sense.
 - A visual approach can be less accurate than a mathematical approach. Mathematical approaches tend to be more precise.
 - Inability to determine quantitative numbers for reliability. This includes how trends change and how they affect reliability.
 
 # ****Comparison of Results****
 
-When comparing the different results that were generated using the test data we were able to better understand the overall reliability of the system. In part 1, we determine an MTTF is  `0.0045` while in part 2, the MTTFmin is `0.000435`. The values are separated by a factor of 10 which indicates that they are quite different quantitatively. This can be due to the fact that part 2 calculates the MIN value, and part 1 maybe an average value, which can be much higher. We imagine that part 1 is more accurate since part 2 was calculated visually with a trial and error approach while part 1 was calculated mathematically. 
+When comparing the different results that were generated using the test data we were able to better understand the overall reliability of the system. In part 1, we determine an MTTF is  `0.0045` while in part 2, the **MTTFmin** is `0.000435`. The values are separated by a factor of 10 which indicates that they are quite different quantitatively. This can be due to the fact that part 2 calculates the MIN value, and part 1 maybe an average value, which can be much higher. We imagine that part 1 is more accurate since part 2 was calculated visually with a trial and error approach while part 1 was calculated mathematically. 
 
 # ****Discussion on Similarity and Differences of the Two Techniques****
 
-A similarity between both techniques is that they can assess data based on their failure times and failure intensity. This was evident when determining the $\text{MTTF}_{min}$ in part 2 of the lab. Based on reliability, both techniques can help determine whether the SUT is ready for release. This supports the decision-making process in software.   
+A similarity between both techniques is that they can assess data based on their failure times and failure intensity. This was evident when determining the **MTTFmin** in part 2 of the lab. Based on reliability, both techniques can help determine whether the SUT is ready for release. This supports the decision-making process in software.   
 
-Alternatively, part 1 provides quantitative values for the system's availability and reliability. While part 2 (RDC) only indicates whether a system falls in the acceptable (or other) ranges based on the data set. In addition, RDC allows for experimentation based on hypothetical scenarios when “playing around” with the $\text{MTTF}_{min}$ and the system's confidence levels.  
+Alternatively, part 1 provides quantitative values for the system's availability and reliability. While part 2 (RDC) only indicates whether a system falls in the acceptable (or other) ranges based on the data set. In addition, RDC allows for experimentation based on hypothetical scenarios when “playing around” with the **MTTFmin** and the system's confidence levels.  
 
 # How the teamwork/effort was divided and managed
 
